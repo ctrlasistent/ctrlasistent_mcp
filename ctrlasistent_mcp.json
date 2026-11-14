@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "ctrlasistent": {
+            "command": "/path/to/ctrlasistent_mcp/venv/bin/python",
+            "args": ["/path/to/ctrlasistent_mcp/ctrlasistent_mcp.py"]
+        }
+    }
+}

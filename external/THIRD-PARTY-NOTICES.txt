@@ -1,0 +1,23 @@
+This application includes and/or redistributes third-party software.
+The third-party software listed below is used by this application
+and remains subject to its respective license terms.
+
+The inclusion or redistribution of third-party software does not
+mean that this application, or any part of the application developed
+by the authors of this application, is licensed under the same
+license.
+
+In particular, the Apache License 2.0 applies to the respective
+third-party components listed below and does not apply to the
+application itself.
+
+Third-party components:
+
+1. python-olm 3.2.16
+   License: Apache License 2.0
+
+2. Olm / libolm
+   License: Apache License 2.0
+
+The full text of the Apache License, Version 2.0 is included
+in this distribution.
