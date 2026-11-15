@@ -1,7 +1,7 @@
 # XMPP OMEMO (xmpp_omemo)
 slixmpp>=1.8.0
 slixmpp-omemo>=1.0.0
-python-omemo>=1.0.0
+omemo>=1.0.0
 
 # Matrix (matrix_chat)
 matrix-nio[e2e]>=0.22.0
