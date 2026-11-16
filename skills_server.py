@@ -23,7 +23,7 @@ DISABLED = {
 
 
 try:
-    from fastmcp.server.providers.skills import SkillsDirectoryProvider
+    from fastmcp.skills.provider import SkillsDirectoryProvider
 
     HAS_PROVIDER = True
 except ImportError:
@@ -153,7 +153,7 @@ if "read_skill" not in DISABLED:
 # Optional - keep native provider for clients that support it
 if HAS_PROVIDER and _SKILLS_DIR.is_dir():
     try:
-        mcp_skills.add_provider(SkillsDirectoryProvider(roots=_SKILLS_DIR))
+        mcp_skills.add_provider(SkillsDirectoryProvider([str(_SKILLS_DIR)]))
     except Exception as e:
         print(f"⚠️  SkillsDirectoryProvider could not be loaded: {e}")
 
