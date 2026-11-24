@@ -29,7 +29,7 @@ except OSError as e:
 os_name = platform.system()
 IS_WIN = os_name == "Windows"
 
-MAX_OUTPUT_CHARS = 4000
+MAX_OUTPUT_CHARS = 20000  # 4000
 OP_CHARS = "();<>|&"
 MAX_DEPTH = 3
 PLACEHOLDER = "__SUBST__"
@@ -458,7 +458,7 @@ class ExecuteCommandTool(Tool):
         out = (r.stdout or "").strip()
         errtxt = (r.stderr or "").strip()
         if r.returncode == 0:
-            return f"[exit 0] {(out or 'Command executed.')[:MAX_OUTPUT_CHARS]}"
+            return f"[exit 0]\n {(out or 'Command executed.')[:MAX_OUTPUT_CHARS]}"
         return (
             f"[ERROR] returncode={r.returncode}\n"
             f"stdout: {out[:MAX_OUTPUT_CHARS] or '(empty)'}\n"

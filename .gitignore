@@ -18,3 +18,5 @@ Thumbs.db
 *.swp
 *.swo
 ai-workspace/
+llama/
+llama*
